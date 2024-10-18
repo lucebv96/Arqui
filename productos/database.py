@@ -6,7 +6,7 @@ def conectar_db():
         port="5432",
         database="productos_db",
         user="postgres",
-        password=""
+        password="newpassword"
     )
     return conexion
 
