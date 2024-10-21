@@ -31,7 +31,7 @@ def consumir_mensajes():
             cur.close()
             conn.close()
             
-    connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
+    connection = pika.BlockingConnection(pika.ConnectionParameters('localhost', 5672))
     channel = connection.channel()
     channel.queue_declare(queue='productos_queue')
     channel.basic_consume(queue='productos_queue', on_message_callback=callback, auto_ack=True)

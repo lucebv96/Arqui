@@ -1,6 +1,7 @@
 import requests
 import time
-from jwt_auth import generate_token
+from inventario.jwt_auth import generate_token
+
 
 BASE_URL_PRODUCTOS = "http://localhost:5000"
 BASE_URL_INVENTARIO = "http://localhost:5001"
