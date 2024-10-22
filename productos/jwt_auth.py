@@ -3,7 +3,7 @@ from functools import wraps
 from flask import request, jsonify
 from datetime import datetime, timedelta
 
-SECRET_KEY = "una_clave_secreta_muy_segura_y_larga"
+SECRET_KEY = ""
 
 def generate_token(service_name):
     payload = {

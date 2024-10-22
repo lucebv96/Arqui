@@ -1,18 +1,29 @@
 import sqlite3
 
-# Conectar a una base de datos SQLite
 def conectar_db():
-    conexion = sqlite3.connect('inventario.db')  # Nombre del archivo SQLite
+    conexion = sqlite3.connect("inventario_db.sqlite")
     return conexion
 
-# Probar la conexión
-def probar_conexion():
+def inicializar_db():
     try:
         conn = conectar_db()
-        print("Inventario: Conexión a SQLite exitosa")
+        cur = conn.cursor()
+
+        # Crear tabla de inventario
+        cur.execute('''
+        CREATE TABLE IF NOT EXISTS inventario (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            nombre TEXT NOT NULL,
+            cantidad INTEGER NOT NULL,
+            ubicacion TEXT
+        )
+        ''')
+
+        conn.commit()
+        print("Inventario: Base de datos y tablas creadas correctamente")
         conn.close()
     except Exception as e:
-        print(f"Inventario: Error al conectar a SQLite: {e}")
+        print(f"Inventario: Error al inicializar la base de datos: {e}")
 
 if __name__ == "__main__":
-    probar_conexion()
+    inicializar_db()
