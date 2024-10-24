@@ -2,3 +2,4 @@
 .venvi/
 .venvp/
 __pycache__/
+.env

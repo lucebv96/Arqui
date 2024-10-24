@@ -2,9 +2,14 @@ import jwt
 from functools import wraps
 from flask import request, jsonify
 from datetime import datetime, timedelta
+import os 
+from dotenv import load_dotenv
+
+
+load_dotenv()
 
 # Clave secreta para firmar los tokens JWT
-SECRET_KEY = "tu_clave_secreta_aqui"  # Cambia esto por una clave secreta más segura
+SECRET_KEY = os.getenv('SECRET_KEY') 
 
 def generate_token(service_name):
     """
