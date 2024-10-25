@@ -1,0 +1,598 @@
+2024-10-20 22:38:42,989 - productos - INFO - Iniciando servicio de productos
+2024-10-20 22:39:04,179 - productos - INFO - Intentando publicar mensaje: crear:89
+2024-10-20 22:39:08,221 - productos - ERROR - Error al publicar mensaje: 
+2024-10-20 22:39:08,222 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised AMQPConnectionError: .
+2024-10-20 22:39:09,222 - productos - INFO - Intentando publicar mensaje: crear:89
+2024-10-20 22:39:13,268 - productos - ERROR - Error al publicar mensaje: 
+2024-10-20 22:39:13,268 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised AMQPConnectionError: .
+2024-10-20 22:39:14,275 - productos - INFO - Intentando publicar mensaje: crear:89
+2024-10-20 22:39:18,311 - productos - ERROR - Error al publicar mensaje: 
+2024-10-20 22:39:18,311 - productos - ERROR - No se pudo publicar el mensaje 89
+2024-10-20 22:39:20,223 - productos - INFO - Intentando publicar mensaje: crear:90
+2024-10-20 22:39:24,273 - productos - ERROR - Error al publicar mensaje: 
+2024-10-20 22:39:24,273 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised AMQPConnectionError: .
+2024-10-20 22:39:25,276 - productos - INFO - Intentando publicar mensaje: crear:90
+2024-10-20 22:39:29,326 - productos - ERROR - Error al publicar mensaje: 
+2024-10-20 22:39:29,326 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Failures threshold reached, circuit breaker opened.
+2024-10-20 22:39:30,330 - productos - ERROR - No se pudo publicar el mensaje 90
+2024-10-20 22:39:35,208 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 22:39:36,210 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 22:39:37,211 - productos - ERROR - No se pudo publicar el mensaje 91
+2024-10-20 22:39:39,211 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 22:39:40,218 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 22:39:41,220 - productos - ERROR - No se pudo publicar el mensaje 92
+2024-10-20 22:39:42,402 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 22:39:43,408 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 22:39:44,410 - productos - ERROR - No se pudo publicar el mensaje 93
+2024-10-20 22:39:45,538 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 22:39:46,539 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 22:39:47,540 - productos - ERROR - No se pudo publicar el mensaje 94
+2024-10-20 22:39:49,151 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 22:39:50,162 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 22:39:51,163 - productos - ERROR - No se pudo publicar el mensaje 95
+2024-10-20 22:39:52,220 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 22:39:53,222 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 22:39:54,223 - productos - ERROR - No se pudo publicar el mensaje 96
+2024-10-20 22:39:55,371 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 22:39:56,373 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 22:39:57,376 - productos - ERROR - No se pudo publicar el mensaje 97
+2024-10-20 22:42:32,503 - productos - INFO - Iniciando servicio de productos
+2024-10-20 22:44:51,858 - productos - INFO - Iniciando servicio de productos
+2024-10-20 22:45:42,537 - productos - INFO - Iniciando servicio de productos
+2024-10-20 22:48:34,527 - productos - INFO - Iniciando servicio de productos
+2024-10-20 22:49:22,844 - productos - INFO - Intentando publicar mensaje: crear:98
+2024-10-20 22:49:26,886 - productos - ERROR - Error al publicar mensaje: 
+2024-10-20 22:49:26,886 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised AMQPConnectionError: .
+2024-10-20 22:49:27,890 - productos - INFO - Intentando publicar mensaje: crear:98
+2024-10-20 22:49:31,970 - productos - ERROR - Error al publicar mensaje: 
+2024-10-20 22:49:31,970 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised AMQPConnectionError: .
+2024-10-20 22:49:32,974 - productos - INFO - Intentando publicar mensaje: crear:98
+2024-10-20 22:49:37,038 - productos - ERROR - Error al publicar mensaje: 
+2024-10-20 22:49:37,038 - productos - ERROR - No se pudo publicar el mensaje 98
+2024-10-20 22:49:39,372 - productos - INFO - Intentando publicar mensaje: crear:99
+2024-10-20 22:49:43,423 - productos - ERROR - Error al publicar mensaje: 
+2024-10-20 22:49:43,423 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised AMQPConnectionError: .
+2024-10-20 22:49:44,425 - productos - INFO - Intentando publicar mensaje: crear:99
+2024-10-20 22:49:48,475 - productos - ERROR - Error al publicar mensaje: 
+2024-10-20 22:49:48,477 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Failures threshold reached, circuit breaker opened.
+2024-10-20 22:49:49,478 - productos - ERROR - No se pudo publicar el mensaje 99
+2024-10-20 22:49:54,881 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 22:49:55,885 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 22:49:56,887 - productos - ERROR - No se pudo publicar el mensaje 100
+2024-10-20 22:50:01,417 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 22:50:02,421 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 22:50:03,424 - productos - ERROR - No se pudo publicar el mensaje 101
+2024-10-20 22:50:06,271 - productos - INFO - Intentando publicar mensaje: crear:102
+2024-10-20 22:50:10,337 - productos - ERROR - Error al publicar mensaje: 
+2024-10-20 22:50:10,338 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Trial call failed, circuit breaker opened.
+2024-10-20 22:50:11,340 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 22:50:12,342 - productos - ERROR - No se pudo publicar el mensaje 102
+2024-10-20 22:56:17,199 - productos - INFO - Iniciando servicio de productos
+2024-10-20 22:56:17,742 - productos - INFO - Iniciando servicio de productos
+2024-10-20 22:57:28,627 - productos - INFO - Intentando publicar mensaje: crear:103
+2024-10-20 22:57:28,652 - productos - INFO - Mensaje publicado exitosamente
+2024-10-20 22:57:40,923 - productos - INFO - Intentando publicar mensaje: crear:104
+2024-10-20 22:57:44,973 - productos - ERROR - Error al publicar mensaje: 
+2024-10-20 22:57:44,975 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised AMQPConnectionError: .
+2024-10-20 22:57:45,976 - productos - INFO - Intentando publicar mensaje: crear:104
+2024-10-20 22:57:50,009 - productos - ERROR - Error al publicar mensaje: 
+2024-10-20 22:57:50,009 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised AMQPConnectionError: .
+2024-10-20 22:57:51,013 - productos - INFO - Intentando publicar mensaje: crear:104
+2024-10-20 22:57:55,061 - productos - ERROR - Error al publicar mensaje: 
+2024-10-20 22:57:55,061 - productos - ERROR - No se pudo publicar el mensaje 104
+2024-10-20 22:57:56,911 - productos - INFO - Intentando publicar mensaje: crear:105
+2024-10-20 22:58:00,980 - productos - ERROR - Error al publicar mensaje: 
+2024-10-20 22:58:00,980 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised AMQPConnectionError: .
+2024-10-20 22:58:01,983 - productos - INFO - Intentando publicar mensaje: crear:105
+2024-10-20 22:58:06,017 - productos - ERROR - Error al publicar mensaje: 
+2024-10-20 22:58:06,017 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Failures threshold reached, circuit breaker opened.
+2024-10-20 22:58:07,021 - productos - ERROR - No se pudo publicar el mensaje 105
+2024-10-20 22:58:07,968 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 22:58:08,976 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 22:58:09,978 - productos - ERROR - No se pudo publicar el mensaje 106
+2024-10-20 22:58:30,460 - productos - INFO - Intentando publicar mensaje: crear:107
+2024-10-20 22:58:34,521 - productos - ERROR - Error al publicar mensaje: 
+2024-10-20 22:58:34,521 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Trial call failed, circuit breaker opened.
+2024-10-20 22:58:35,525 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 22:58:36,527 - productos - ERROR - No se pudo publicar el mensaje 107
+2024-10-20 22:58:42,072 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 22:58:43,075 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 22:58:44,078 - productos - ERROR - No se pudo publicar el mensaje 108
+2024-10-20 22:58:47,603 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 22:58:48,608 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 22:58:49,610 - productos - INFO - Intentando publicar mensaje: crear:109
+2024-10-20 22:58:53,680 - productos - ERROR - Error al publicar mensaje: 
+2024-10-20 22:58:53,682 - productos - ERROR - No se pudo publicar el mensaje 109
+2024-10-20 22:58:56,803 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 22:58:57,805 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 22:58:58,806 - productos - ERROR - No se pudo publicar el mensaje 110
+2024-10-20 22:59:06,996 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 22:59:07,997 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 22:59:08,998 - productos - INFO - Intentando publicar mensaje: crear:111
+2024-10-20 22:59:10,534 - productos - INFO - Mensaje publicado exitosamente
+2024-10-20 22:59:15,297 - productos - INFO - Intentando publicar mensaje: crear:112
+2024-10-20 22:59:15,312 - productos - INFO - Mensaje publicado exitosamente
+2024-10-20 22:59:20,126 - productos - INFO - Intentando publicar mensaje: crear:113
+2024-10-20 22:59:20,131 - productos - INFO - Mensaje publicado exitosamente
+2024-10-20 23:01:59,728 - productos - INFO - Iniciando servicio de productos
+2024-10-20 23:02:00,277 - productos - INFO - Iniciando servicio de productos
+2024-10-20 23:02:16,900 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000002752AF74350>
+2024-10-20 23:02:16,900 - productos - INFO - Intentando publicar mensaje: crear:114
+2024-10-20 23:02:16,919 - productos - INFO - Mensaje publicado exitosamente
+2024-10-20 23:02:26,316 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000002752AF74350>
+2024-10-20 23:02:26,317 - productos - INFO - Intentando publicar mensaje: crear:115
+2024-10-20 23:02:30,383 - productos - ERROR - Error al publicar mensaje: 
+2024-10-20 23:02:30,383 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised AMQPConnectionError: .
+2024-10-20 23:02:31,387 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000002752AF74350>
+2024-10-20 23:02:31,387 - productos - INFO - Intentando publicar mensaje: crear:115
+2024-10-20 23:02:35,433 - productos - ERROR - Error al publicar mensaje: 
+2024-10-20 23:02:35,433 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised AMQPConnectionError: .
+2024-10-20 23:02:36,434 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000002752AF74350>
+2024-10-20 23:02:36,435 - productos - INFO - Intentando publicar mensaje: crear:115
+2024-10-20 23:02:40,472 - productos - ERROR - Error al publicar mensaje: 
+2024-10-20 23:02:40,475 - productos - ERROR - No se pudo publicar el mensaje 115
+2024-10-20 23:02:46,438 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000002752AF74350>
+2024-10-20 23:02:46,440 - productos - INFO - Intentando publicar mensaje: crear:116
+2024-10-20 23:02:50,506 - productos - ERROR - Error al publicar mensaje: 
+2024-10-20 23:02:50,506 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised AMQPConnectionError: .
+2024-10-20 23:02:51,510 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000002752AF74350>
+2024-10-20 23:02:51,510 - productos - INFO - Intentando publicar mensaje: crear:116
+2024-10-20 23:02:55,574 - productos - ERROR - Error al publicar mensaje: 
+2024-10-20 23:02:55,575 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Failures threshold reached, circuit breaker opened.
+2024-10-20 23:02:56,577 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002752B094EC0>
+2024-10-20 23:02:56,577 - productos - ERROR - No se pudo publicar el mensaje 116
+2024-10-20 23:02:57,604 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002752B094EC0>
+2024-10-20 23:02:57,604 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 23:02:58,606 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002752B094EC0>
+2024-10-20 23:02:58,606 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 23:02:59,610 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002752B094EC0>
+2024-10-20 23:02:59,613 - productos - ERROR - No se pudo publicar el mensaje 117
+2024-10-20 23:03:02,410 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002752B094EC0>
+2024-10-20 23:03:02,410 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 23:03:03,418 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002752B094EC0>
+2024-10-20 23:03:03,418 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 23:03:04,425 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002752B094EC0>
+2024-10-20 23:03:04,428 - productos - ERROR - No se pudo publicar el mensaje 118
+2024-10-20 23:03:05,336 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002752B094EC0>
+2024-10-20 23:03:05,336 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 23:03:06,338 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002752B094EC0>
+2024-10-20 23:03:06,338 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 23:03:07,339 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002752B094EC0>
+2024-10-20 23:03:07,339 - productos - ERROR - No se pudo publicar el mensaje 119
+2024-10-20 23:03:08,729 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002752B094EC0>
+2024-10-20 23:03:08,729 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 23:03:09,736 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002752B094EC0>
+2024-10-20 23:03:09,736 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 23:03:10,739 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002752B094EC0>
+2024-10-20 23:03:10,739 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitHalfOpenState object at 0x000002752B096B70>
+2024-10-20 23:03:10,739 - productos - INFO - Intentando publicar mensaje: crear:120
+2024-10-20 23:03:14,782 - productos - ERROR - Error al publicar mensaje: 
+2024-10-20 23:03:14,784 - productos - ERROR - No se pudo publicar el mensaje 120
+2024-10-20 23:03:20,068 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002752B097320>
+2024-10-20 23:03:20,068 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 23:03:21,083 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002752B097320>
+2024-10-20 23:03:21,085 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 23:03:22,087 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002752B097320>
+2024-10-20 23:03:22,088 - productos - ERROR - No se pudo publicar el mensaje 121
+2024-10-20 23:04:00,653 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002752B097320>
+2024-10-20 23:04:00,664 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitHalfOpenState object at 0x000002752B094E90>
+2024-10-20 23:04:00,664 - productos - INFO - Intentando publicar mensaje: crear:122
+2024-10-20 23:04:00,688 - productos - INFO - Mensaje publicado exitosamente
+2024-10-20 23:10:16,506 - productos - INFO - Iniciando servicio de productos
+2024-10-20 23:10:17,059 - productos - INFO - Iniciando servicio de productos
+2024-10-20 23:10:34,251 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x0000028108468C50>
+2024-10-20 23:10:34,251 - productos - INFO - Intentando publicar mensaje: crear:123
+2024-10-20 23:10:38,317 - productos - ERROR - Error al publicar mensaje: 
+2024-10-20 23:10:38,320 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised AMQPConnectionError: .
+2024-10-20 23:10:39,321 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x0000028108468C50>
+2024-10-20 23:10:39,321 - productos - INFO - Intentando publicar mensaje: crear:123
+2024-10-20 23:10:43,387 - productos - ERROR - Error al publicar mensaje: 
+2024-10-20 23:10:43,389 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised AMQPConnectionError: .
+2024-10-20 23:10:44,390 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x0000028108468C50>
+2024-10-20 23:10:44,390 - productos - INFO - Intentando publicar mensaje: crear:123
+2024-10-20 23:10:48,437 - productos - ERROR - Error al publicar mensaje: 
+2024-10-20 23:10:48,439 - productos - ERROR - No se pudo publicar el mensaje 123
+2024-10-20 23:10:51,213 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x0000028108468C50>
+2024-10-20 23:10:51,213 - productos - INFO - Intentando publicar mensaje: crear:124
+2024-10-20 23:10:55,278 - productos - ERROR - Error al publicar mensaje: 
+2024-10-20 23:10:55,279 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised AMQPConnectionError: .
+2024-10-20 23:10:56,280 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x0000028108468C50>
+2024-10-20 23:10:56,280 - productos - INFO - Intentando publicar mensaje: crear:124
+2024-10-20 23:11:00,328 - productos - ERROR - Error al publicar mensaje: 
+2024-10-20 23:11:00,328 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Failures threshold reached, circuit breaker opened.
+2024-10-20 23:11:01,332 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002810931FF50>
+2024-10-20 23:11:01,332 - productos - ERROR - No se pudo publicar el mensaje 124
+2024-10-20 23:11:03,911 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002810931FF50>
+2024-10-20 23:11:03,911 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 23:11:04,925 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002810931FF50>
+2024-10-20 23:11:04,925 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 23:11:05,931 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002810931FF50>
+2024-10-20 23:11:05,932 - productos - ERROR - No se pudo publicar el mensaje 125
+2024-10-20 23:11:10,676 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002810931FF50>
+2024-10-20 23:11:10,678 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 23:11:11,679 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002810931FF50>
+2024-10-20 23:11:11,681 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 23:11:12,684 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002810931FF50>
+2024-10-20 23:11:12,685 - productos - ERROR - No se pudo publicar el mensaje 126
+2024-10-20 23:11:13,838 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002810931FF50>
+2024-10-20 23:11:13,838 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 23:11:14,840 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002810931FF50>
+2024-10-20 23:11:14,840 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 23:11:15,841 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002810931FF50>
+2024-10-20 23:11:15,841 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitHalfOpenState object at 0x000002810931E4B0>
+2024-10-20 23:11:15,841 - productos - INFO - Intentando publicar mensaje: crear:127
+2024-10-20 23:11:19,922 - productos - ERROR - Error al publicar mensaje: 
+2024-10-20 23:11:19,922 - productos - ERROR - No se pudo publicar el mensaje 127
+2024-10-20 23:11:31,808 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002810931E630>
+2024-10-20 23:11:31,808 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 23:11:32,810 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002810931E630>
+2024-10-20 23:11:32,810 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-20 23:11:33,813 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002810931E630>
+2024-10-20 23:11:33,813 - productos - ERROR - No se pudo publicar el mensaje 128
+2024-10-20 23:11:38,861 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000002810931E630>
+2024-10-20 23:11:38,861 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitHalfOpenState object at 0x00000281093427B0>
+2024-10-20 23:11:38,862 - productos - INFO - Intentando publicar mensaje: crear:129
+2024-10-20 23:11:38,886 - productos - INFO - Mensaje publicado exitosamente
+2024-10-20 23:54:10,121 - productos - INFO - Iniciando servicio de productos
+2024-10-20 23:54:10,726 - productos - INFO - Iniciando servicio de productos
+2024-10-20 23:58:05,842 - productos - INFO - Iniciando servicio de productos
+2024-10-20 23:58:06,399 - productos - INFO - Iniciando servicio de productos
+2024-10-20 23:58:51,340 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x0000022212D442C0>
+2024-10-20 23:58:51,340 - productos - INFO - Intentando publicar mensaje: crear:130
+2024-10-20 23:58:51,349 - productos - INFO - Mensaje publicado exitosamente
+2024-10-20 23:59:26,794 - productos - ERROR - Error al crear producto: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2024-10-21 00:00:31,770 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x0000022212D442C0>
+2024-10-21 00:00:31,770 - productos - INFO - Intentando publicar mensaje: crear:131
+2024-10-21 00:00:31,787 - productos - INFO - Mensaje publicado exitosamente
+2024-10-21 00:04:49,090 - productos - INFO - Iniciando servicio de productos
+2024-10-21 00:04:50,766 - productos - INFO - Iniciando servicio de productos
+2024-10-21 00:04:53,485 - productos - INFO - Iniciando servicio de productos
+2024-10-21 00:06:18,431 - productos - INFO - Iniciando servicio de productos
+2024-10-21 00:06:21,079 - productos - INFO - Iniciando servicio de productos
+2024-10-21 00:06:26,813 - productos - INFO - Iniciando servicio de productos
+2024-10-21 00:06:29,505 - productos - INFO - Iniciando servicio de productos
+2024-10-21 00:06:32,169 - productos - INFO - Iniciando servicio de productos
+2024-10-21 00:06:34,841 - productos - INFO - Iniciando servicio de productos
+2024-10-21 00:06:37,534 - productos - INFO - Iniciando servicio de productos
+2024-10-21 00:06:40,227 - productos - INFO - Iniciando servicio de productos
+2024-10-21 00:21:13,390 - productos - INFO - Iniciando servicio de productos
+2024-10-21 00:21:13,913 - productos - INFO - Iniciando servicio de productos
+2024-10-21 00:22:22,642 - productos - INFO - Iniciando servicio de productos
+2024-10-21 00:22:23,199 - productos - INFO - Iniciando servicio de productos
+2024-10-21 00:22:38,620 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x0000026FD6B09010>
+2024-10-21 00:22:38,620 - productos - INFO - Intentando publicar mensaje: crear:132
+2024-10-21 00:22:38,643 - productos - INFO - Mensaje publicado exitosamente
+2024-10-21 00:22:44,873 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x0000026FD6B09010>
+2024-10-21 00:22:44,873 - productos - INFO - Intentando publicar mensaje: crear:133
+2024-10-21 00:22:44,883 - productos - INFO - Mensaje publicado exitosamente
+2024-10-21 00:26:03,407 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x0000026FD6B09010>
+2024-10-21 00:26:03,407 - productos - INFO - Intentando publicar mensaje: crear:134
+2024-10-21 00:26:07,454 - productos - ERROR - Error al publicar mensaje: 
+2024-10-21 00:26:07,460 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised AMQPConnectionError: .
+2024-10-21 00:26:08,461 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x0000026FD6B09010>
+2024-10-21 00:26:08,461 - productos - INFO - Intentando publicar mensaje: crear:134
+2024-10-21 00:26:12,509 - productos - ERROR - Error al publicar mensaje: 
+2024-10-21 00:26:12,511 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised AMQPConnectionError: .
+2024-10-21 00:26:13,512 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x0000026FD6B09010>
+2024-10-21 00:26:13,512 - productos - INFO - Intentando publicar mensaje: crear:134
+2024-10-21 00:26:17,576 - productos - ERROR - Error al publicar mensaje: 
+2024-10-21 00:26:17,577 - productos - ERROR - No se pudo publicar el mensaje 134
+2024-10-21 00:26:22,854 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x0000026FD6B09010>
+2024-10-21 00:26:22,854 - productos - INFO - Intentando publicar mensaje: crear:135
+2024-10-21 00:26:26,944 - productos - ERROR - Error al publicar mensaje: 
+2024-10-21 00:26:26,947 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised AMQPConnectionError: .
+2024-10-21 00:26:27,948 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x0000026FD6B09010>
+2024-10-21 00:26:27,949 - productos - INFO - Intentando publicar mensaje: crear:135
+2024-10-21 00:26:31,999 - productos - ERROR - Error al publicar mensaje: 
+2024-10-21 00:26:31,999 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Failures threshold reached, circuit breaker opened.
+2024-10-21 00:26:33,001 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x0000026FD9C4D910>
+2024-10-21 00:26:33,001 - productos - ERROR - No se pudo publicar el mensaje 135
+2024-10-21 00:26:34,848 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x0000026FD9C4D910>
+2024-10-21 00:26:34,848 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-21 00:26:35,852 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x0000026FD9C4D910>
+2024-10-21 00:26:35,852 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-21 00:26:36,854 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x0000026FD9C4D910>
+2024-10-21 00:26:36,854 - productos - ERROR - No se pudo publicar el mensaje 136
+2024-10-21 00:26:38,631 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x0000026FD9C4D910>
+2024-10-21 00:26:38,631 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-21 00:26:39,642 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x0000026FD9C4D910>
+2024-10-21 00:26:39,642 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-21 00:26:40,645 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x0000026FD9C4D910>
+2024-10-21 00:26:40,645 - productos - ERROR - No se pudo publicar el mensaje 137
+2024-10-21 00:26:41,781 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x0000026FD9C4D910>
+2024-10-21 00:26:41,781 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-21 00:26:42,784 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x0000026FD9C4D910>
+2024-10-21 00:26:42,787 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-21 00:26:43,788 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x0000026FD9C4D910>
+2024-10-21 00:26:43,788 - productos - ERROR - No se pudo publicar el mensaje 138
+2024-10-21 00:26:44,708 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x0000026FD9C4D910>
+2024-10-21 00:26:44,709 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-21 00:26:45,710 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x0000026FD9C4D910>
+2024-10-21 00:26:45,710 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-21 00:26:46,713 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x0000026FD9C4D910>
+2024-10-21 00:26:46,713 - productos - ERROR - No se pudo publicar el mensaje 139
+2024-10-21 00:26:47,656 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x0000026FD9C4D910>
+2024-10-21 00:26:47,657 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitHalfOpenState object at 0x0000026FD6C55430>
+2024-10-21 00:26:47,657 - productos - INFO - Intentando publicar mensaje: crear:140
+2024-10-21 00:26:51,716 - productos - ERROR - Error al publicar mensaje: 
+2024-10-21 00:26:51,716 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Trial call failed, circuit breaker opened.
+2024-10-21 00:26:52,717 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x0000026FD9C72390>
+2024-10-21 00:26:52,717 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-21 00:26:53,719 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x0000026FD9C72390>
+2024-10-21 00:26:53,722 - productos - ERROR - No se pudo publicar el mensaje 140
+2024-10-21 00:27:00,196 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x0000026FD9C72390>
+2024-10-21 00:27:00,197 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-21 00:27:01,198 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x0000026FD9C72390>
+2024-10-21 00:27:01,198 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-21 00:27:02,200 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x0000026FD9C72390>
+2024-10-21 00:27:02,200 - productos - ERROR - No se pudo publicar el mensaje 141
+2024-10-21 00:27:07,197 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x0000026FD9C72390>
+2024-10-21 00:27:07,197 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitHalfOpenState object at 0x0000026FD9C4EC90>
+2024-10-21 00:27:07,197 - productos - INFO - Intentando publicar mensaje: crear:142
+2024-10-21 00:27:07,238 - productos - INFO - Mensaje publicado exitosamente
+2024-10-21 00:27:12,761 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x0000026FD89A2720>
+2024-10-21 00:27:12,761 - productos - INFO - Intentando publicar mensaje: crear:143
+2024-10-21 00:27:12,783 - productos - INFO - Mensaje publicado exitosamente
+2024-10-21 00:36:02,105 - productos - INFO - Iniciando servicio de productos
+2024-10-21 00:36:02,651 - productos - INFO - Iniciando servicio de productos
+2024-10-21 00:36:24,138 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000002362FF7B920>
+2024-10-21 00:36:24,139 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised AttributeError: 'CircuitClosedState' object has no attribute 'state'.
+2024-10-21 00:36:25,140 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000002362FF7B920>
+2024-10-21 00:36:25,141 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised AttributeError: 'CircuitClosedState' object has no attribute 'state'.
+2024-10-21 00:36:26,143 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000002362FF7B920>
+2024-10-21 00:36:26,143 - productos - ERROR - No se pudo publicar el mensaje 144
+2024-10-21 00:40:07,988 - productos - INFO - Iniciando servicio de productos
+2024-10-21 00:40:10,691 - productos - INFO - Iniciando servicio de productos
+2024-10-21 00:40:15,393 - productos - INFO - Iniciando servicio de productos
+2024-10-21 00:40:26,246 - productos - INFO - Iniciando servicio de productos
+2024-10-21 00:40:29,977 - productos - INFO - Iniciando servicio de productos
+2024-10-21 00:40:38,222 - productos - INFO - Iniciando servicio de productos
+2024-10-21 00:40:38,755 - productos - INFO - Iniciando servicio de productos
+2024-10-21 00:41:07,162 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000001E93F8DB920>
+2024-10-21 00:41:07,162 - productos - INFO - Intentando publicar mensaje: crear:145
+2024-10-21 00:41:07,178 - productos - INFO - Mensaje publicado exitosamente
+2024-10-21 00:41:21,717 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000001E93F8DB920>
+2024-10-21 00:41:21,717 - productos - INFO - Intentando publicar mensaje: crear:146
+2024-10-21 00:41:25,770 - productos - ERROR - Error al publicar mensaje: 
+2024-10-21 00:41:25,770 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised AMQPConnectionError: .
+2024-10-21 00:41:26,772 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000001E93F8DB920>
+2024-10-21 00:41:26,772 - productos - INFO - Intentando publicar mensaje: crear:146
+2024-10-21 00:41:30,823 - productos - ERROR - Error al publicar mensaje: 
+2024-10-21 00:41:30,823 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised AMQPConnectionError: .
+2024-10-21 00:41:31,827 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000001E93F8DB920>
+2024-10-21 00:41:31,827 - productos - INFO - Intentando publicar mensaje: crear:146
+2024-10-21 00:41:35,874 - productos - ERROR - Error al publicar mensaje: 
+2024-10-21 00:41:35,874 - productos - ERROR - No se pudo publicar el mensaje 146
+2024-10-21 00:41:40,457 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000001E93F8DB920>
+2024-10-21 00:41:40,457 - productos - INFO - Intentando publicar mensaje: crear:147
+2024-10-21 00:41:44,527 - productos - ERROR - Error al publicar mensaje: 
+2024-10-21 00:41:44,527 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised AMQPConnectionError: .
+2024-10-21 00:41:45,534 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000001E93F8DB920>
+2024-10-21 00:41:45,534 - productos - INFO - Intentando publicar mensaje: crear:147
+2024-10-21 00:41:49,577 - productos - ERROR - Error al publicar mensaje: 
+2024-10-21 00:41:49,582 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Failures threshold reached, circuit breaker opened.
+2024-10-21 00:41:50,584 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000001E9430B4A70>
+2024-10-21 00:41:50,584 - productos - ERROR - No se pudo publicar el mensaje 147
+2024-10-21 00:41:54,671 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000001E9430B4A70>
+2024-10-21 00:41:54,671 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-21 00:41:55,673 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000001E9430B4A70>
+2024-10-21 00:41:55,673 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-21 00:41:56,676 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000001E9430B4A70>
+2024-10-21 00:41:56,676 - productos - ERROR - No se pudo publicar el mensaje 148
+2024-10-21 00:41:57,715 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000001E9430B4A70>
+2024-10-21 00:41:57,715 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-21 00:41:58,729 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000001E9430B4A70>
+2024-10-21 00:41:58,729 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-21 00:41:59,733 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000001E9430B4A70>
+2024-10-21 00:41:59,733 - productos - ERROR - No se pudo publicar el mensaje 149
+2024-10-21 00:42:01,100 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000001E9430B4A70>
+2024-10-21 00:42:01,100 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-21 00:42:02,110 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000001E9430B4A70>
+2024-10-21 00:42:02,110 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-21 00:42:03,114 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000001E9430B4A70>
+2024-10-21 00:42:03,130 - productos - ERROR - No se pudo publicar el mensaje 150
+2024-10-21 00:42:21,275 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000001E9430B4A70>
+2024-10-21 00:42:21,275 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitHalfOpenState object at 0x000001E9430B63F0>
+2024-10-21 00:42:21,275 - productos - INFO - Intentando publicar mensaje: crear:151
+2024-10-21 00:42:25,311 - productos - ERROR - Error al publicar mensaje: 
+2024-10-21 00:42:25,311 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Trial call failed, circuit breaker opened.
+2024-10-21 00:42:26,315 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000001E9430B7050>
+2024-10-21 00:42:26,317 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-21 00:42:27,319 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000001E9430B7050>
+2024-10-21 00:42:27,319 - productos - ERROR - No se pudo publicar el mensaje 151
+2024-10-21 00:42:32,979 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000001E9430B7050>
+2024-10-21 00:42:32,979 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-21 00:42:33,985 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000001E9430B7050>
+2024-10-21 00:42:33,985 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-21 00:42:34,986 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000001E9430B7050>
+2024-10-21 00:42:34,986 - productos - ERROR - No se pudo publicar el mensaje 152
+2024-10-21 00:42:37,416 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000001E9430B7050>
+2024-10-21 00:42:37,416 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-21 00:42:38,423 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000001E9430B7050>
+2024-10-21 00:42:38,423 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-21 00:42:39,426 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000001E9430B7050>
+2024-10-21 00:42:39,426 - productos - ERROR - No se pudo publicar el mensaje 153
+2024-10-21 00:42:47,466 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x000001E9430B7050>
+2024-10-21 00:42:47,466 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitHalfOpenState object at 0x000001E9430B6BD0>
+2024-10-21 00:42:47,466 - productos - INFO - Intentando publicar mensaje: crear:154
+2024-10-21 00:42:47,489 - productos - INFO - Mensaje publicado exitosamente
+2024-10-21 02:27:12,600 - productos - INFO - Iniciando servicio de productos
+2024-10-21 03:59:51,620 - productos - INFO - Iniciando servicio de productos
+2024-10-21 03:59:53,261 - productos - INFO - Iniciando servicio de productos
+2024-10-21 03:59:54,939 - productos - INFO - Iniciando servicio de productos
+2024-10-21 04:01:10,077 - productos - INFO - Iniciando servicio de productos
+2024-10-21 04:01:13,883 - productos - INFO - Iniciando servicio de productos
+2024-10-21 04:03:45,384 - productos - INFO - Iniciando servicio de productos
+2024-10-21 04:03:45,939 - productos - INFO - Iniciando servicio de productos
+2024-10-21 04:04:00,668 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000002D9CBB1BDD0>
+2024-10-21 04:04:00,669 - productos - INFO - Intentando publicar mensaje: crear:155
+2024-10-21 04:04:00,681 - productos - INFO - Mensaje publicado exitosamente
+2024-10-21 04:04:06,824 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000002D9CBB1BDD0>
+2024-10-21 04:04:06,824 - productos - INFO - Intentando publicar mensaje: crear:156
+2024-10-21 04:04:06,833 - productos - INFO - Mensaje publicado exitosamente
+2024-10-21 04:06:03,657 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000002D9CBB1BDD0>
+2024-10-21 04:06:03,657 - productos - INFO - Intentando publicar mensaje: crear:157
+2024-10-21 04:06:03,682 - productos - INFO - Mensaje publicado exitosamente
+2024-10-21 04:07:51,130 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000002D9CBB1BDD0>
+2024-10-21 04:07:51,130 - productos - INFO - Intentando publicar mensaje: crear:158
+2024-10-21 04:07:51,130 - productos - INFO - Mensaje publicado exitosamente
+2024-10-21 04:08:00,639 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000002D9CBB1BDD0>
+2024-10-21 04:08:00,639 - productos - INFO - Intentando publicar mensaje: crear:159
+2024-10-21 04:08:00,654 - productos - INFO - Mensaje publicado exitosamente
+2024-10-21 04:11:50,122 - productos - INFO - Iniciando servicio de productos
+2024-10-21 04:19:19,874 - productos - INFO - Iniciando servicio de productos
+2024-10-21 04:21:07,185 - productos - INFO - Iniciando servicio de productos
+2024-10-21 04:21:07,783 - productos - INFO - Iniciando servicio de productos
+2024-10-21 04:22:00,378 - productos - ERROR - Error al crear producto: El nombre y la descripción no pueden estar vacíos
+2024-10-21 04:22:08,925 - productos - ERROR - Error al crear producto: El nombre y la descripción no pueden estar vacíos
+2024-10-21 04:27:14,895 - productos - INFO - Iniciando servicio de productos
+2024-10-21 04:27:16,547 - productos - INFO - Iniciando servicio de productos
+2024-10-21 04:27:21,400 - productos - INFO - Iniciando servicio de productos
+2024-10-21 04:27:22,085 - productos - INFO - Iniciando servicio de productos
+2024-10-21 04:27:28,833 - productos - ERROR - Error al crear producto: El nombre y la descripción no pueden estar vacíos
+2024-10-21 04:28:48,162 - productos - INFO - Iniciando servicio de productos
+2024-10-21 04:28:50,887 - productos - INFO - Iniciando servicio de productos
+2024-10-21 04:28:53,550 - productos - INFO - Iniciando servicio de productos
+2024-10-21 04:28:56,241 - productos - INFO - Iniciando servicio de productos
+2024-10-21 04:29:01,021 - productos - INFO - Iniciando servicio de productos
+2024-10-21 04:29:03,690 - productos - INFO - Iniciando servicio de productos
+2024-10-21 04:29:14,396 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000001DDA479BD70>
+2024-10-21 04:29:14,397 - productos - INFO - Intentando publicar mensaje: crear:160
+2024-10-21 04:29:14,410 - productos - INFO - Mensaje publicado exitosamente
+2024-10-21 04:31:39,414 - productos - INFO - Iniciando servicio de productos
+2024-10-21 04:31:48,496 - productos - INFO - Iniciando servicio de productos
+2024-10-21 04:31:49,054 - productos - INFO - Iniciando servicio de productos
+2024-10-21 04:33:56,550 - productos - INFO - Iniciando servicio de productos
+2024-10-21 04:34:02,216 - productos - INFO - Iniciando servicio de productos
+2024-10-21 04:34:12,222 - productos - INFO - Iniciando servicio de productos
+2024-10-21 04:34:12,804 - productos - INFO - Iniciando servicio de productos
+2024-10-21 06:03:44,440 - productos - INFO - Iniciando servicio de productos
+2024-10-21 06:03:48,875 - productos - INFO - Iniciando servicio de productos
+2024-10-21 06:03:49,453 - productos - INFO - Iniciando servicio de productos
+2024-10-21 06:04:09,792 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000002464656BE00>
+2024-10-21 06:04:09,792 - productos - INFO - Intentando publicar mensaje: crear:161
+2024-10-21 06:04:09,827 - productos - INFO - Mensaje publicado exitosamente
+2024-10-21 06:04:15,999 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000002464656BE00>
+2024-10-21 06:04:16,000 - productos - INFO - Intentando publicar mensaje: crear:162
+2024-10-21 06:04:16,011 - productos - INFO - Mensaje publicado exitosamente
+2024-10-21 06:04:31,305 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000002464656BE00>
+2024-10-21 06:04:31,305 - productos - INFO - Intentando publicar mensaje: crear:163
+2024-10-21 06:04:31,319 - productos - INFO - Mensaje publicado exitosamente
+2024-10-21 06:04:37,508 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000002464656BE00>
+2024-10-21 06:04:37,509 - productos - INFO - Intentando publicar mensaje: crear:164
+2024-10-21 06:04:37,518 - productos - INFO - Mensaje publicado exitosamente
+2024-10-21 06:06:00,985 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000002464656BE00>
+2024-10-21 06:06:00,985 - productos - INFO - Intentando publicar mensaje: crear:165
+2024-10-21 06:06:00,997 - productos - INFO - Mensaje publicado exitosamente
+2024-10-21 06:06:28,543 - productos - INFO - Iniciando servicio de productos
+2024-10-21 06:07:14,099 - productos - INFO - Iniciando servicio de productos
+2024-10-21 06:07:15,775 - productos - INFO - Iniciando servicio de productos
+2024-10-21 06:07:22,564 - productos - INFO - Iniciando servicio de productos
+2024-10-21 06:07:34,530 - productos - INFO - Iniciando servicio de productos
+2024-10-21 06:11:26,934 - productos - INFO - Iniciando servicio de productos
+2024-10-21 06:38:54,988 - productos - INFO - Iniciando servicio de productos
+2024-10-21 06:38:55,526 - productos - INFO - Iniciando servicio de productos
+2024-10-21 06:39:15,283 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x0000026AD175BDD0>
+2024-10-21 06:39:15,283 - productos - INFO - Intentando publicar mensaje: crear:166
+2024-10-21 06:39:15,302 - productos - INFO - Mensaje publicado exitosamente
+2024-10-21 06:39:25,467 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x0000026AD175BDD0>
+2024-10-21 06:39:25,467 - productos - INFO - Intentando publicar mensaje: crear:167
+2024-10-21 06:39:29,532 - productos - ERROR - Error al publicar mensaje: 
+2024-10-21 06:39:29,532 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised AMQPConnectionError: .
+2024-10-21 06:39:30,537 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x0000026AD175BDD0>
+2024-10-21 06:39:30,539 - productos - INFO - Intentando publicar mensaje: crear:167
+2024-10-21 06:39:34,578 - productos - ERROR - Error al publicar mensaje: 
+2024-10-21 06:39:34,578 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised AMQPConnectionError: .
+2024-10-21 06:39:35,582 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x0000026AD175BDD0>
+2024-10-21 06:39:35,582 - productos - INFO - Intentando publicar mensaje: crear:167
+2024-10-21 06:39:39,651 - productos - ERROR - Error al publicar mensaje: 
+2024-10-21 06:39:39,651 - productos - ERROR - No se pudo publicar el mensaje 167
+2024-10-21 06:39:40,882 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x0000026AD175BDD0>
+2024-10-21 06:39:40,882 - productos - INFO - Intentando publicar mensaje: crear:168
+2024-10-21 06:39:44,925 - productos - ERROR - Error al publicar mensaje: 
+2024-10-21 06:39:44,928 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised AMQPConnectionError: .
+2024-10-21 06:39:45,930 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x0000026AD175BDD0>
+2024-10-21 06:39:45,930 - productos - INFO - Intentando publicar mensaje: crear:168
+2024-10-21 06:39:49,979 - productos - ERROR - Error al publicar mensaje: 
+2024-10-21 06:39:49,979 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Failures threshold reached, circuit breaker opened.
+2024-10-21 06:39:50,982 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x0000026AD183F380>
+2024-10-21 06:39:50,982 - productos - ERROR - No se pudo publicar el mensaje 168
+2024-10-21 06:40:01,981 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x0000026AD183F380>
+2024-10-21 06:40:01,983 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-21 06:40:02,985 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x0000026AD183F380>
+2024-10-21 06:40:02,986 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-21 06:40:03,988 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x0000026AD183F380>
+2024-10-21 06:40:03,989 - productos - ERROR - No se pudo publicar el mensaje 169
+2024-10-21 06:40:08,939 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x0000026AD183F380>
+2024-10-21 06:40:08,939 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitHalfOpenState object at 0x0000026AD183F830>
+2024-10-21 06:40:08,939 - productos - INFO - Intentando publicar mensaje: crear:170
+2024-10-21 06:40:13,006 - productos - ERROR - Error al publicar mensaje: 
+2024-10-21 06:40:13,007 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Trial call failed, circuit breaker opened.
+2024-10-21 06:40:14,007 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x0000026AD183EE40>
+2024-10-21 06:40:14,008 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised CircuitBreakerError: Timeout not elapsed yet, circuit breaker still open.
+2024-10-21 06:40:15,010 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitOpenState object at 0x0000026AD183EE40>
+2024-10-21 06:40:15,012 - productos - ERROR - No se pudo publicar el mensaje 170
+2024-10-21 06:40:28,776 - productos - INFO - Iniciando servicio de productos
+2024-10-21 08:08:52,687 - productos - INFO - Iniciando servicio de productos
+2024-10-21 08:08:53,247 - productos - INFO - Iniciando servicio de productos
+2024-10-21 08:09:12,148 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000001D84D93BDD0>
+2024-10-21 08:09:12,148 - productos - INFO - Intentando publicar mensaje: crear:171
+2024-10-21 08:09:16,195 - productos - ERROR - Error al publicar mensaje: 
+2024-10-21 08:09:16,198 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised AMQPConnectionError: .
+2024-10-21 08:09:17,200 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000001D84D93BDD0>
+2024-10-21 08:09:17,200 - productos - INFO - Intentando publicar mensaje: crear:171
+2024-10-21 08:09:21,259 - productos - ERROR - Error al publicar mensaje: 
+2024-10-21 08:09:21,259 - productos_resilience - INFO - Retrying __main__.publicar_mensaje in 1.0 seconds as it raised AMQPConnectionError: .
+2024-10-21 08:09:22,262 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000001D84D93BDD0>
+2024-10-21 08:09:22,262 - productos - INFO - Intentando publicar mensaje: crear:171
+2024-10-21 08:09:27,941 - productos - INFO - Iniciando servicio de productos
+2024-10-21 08:09:28,484 - productos - INFO - Iniciando servicio de productos
+2024-10-21 08:10:33,243 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000002B6EE467F20>
+2024-10-21 08:10:33,243 - productos - INFO - Intentando publicar mensaje: crear:172
+2024-10-21 08:10:33,257 - productos - INFO - Mensaje publicado exitosamente
+2024-10-21 08:10:39,426 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000002B6EE467F20>
+2024-10-21 08:10:39,426 - productos - INFO - Intentando publicar mensaje: crear:173
+2024-10-21 08:10:39,445 - productos - INFO - Mensaje publicado exitosamente
+2024-10-21 08:12:16,908 - productos - INFO - Iniciando servicio de productos
+2024-10-21 10:33:20,719 - productos - INFO - Iniciando servicio de productos
+2024-10-21 10:33:21,244 - productos - INFO - Iniciando servicio de productos
+2024-10-21 14:53:45,749 - productos - INFO - Iniciando servicio de productos
+2024-10-21 14:53:46,399 - productos - INFO - Iniciando servicio de productos
+2024-10-21 14:55:42,793 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x000002AB4EDE7FB0>
+2024-10-21 14:55:42,793 - productos - INFO - Intentando publicar mensaje: crear:174
+2024-10-21 14:55:42,817 - productos - INFO - Mensaje publicado exitosamente
+2024-10-21 15:25:46,225 - productos - INFO - Iniciando servicio de productos
+2024-10-21 15:25:47,982 - productos - INFO - Iniciando servicio de productos
+2024-10-21 15:25:49,940 - productos - INFO - Iniciando servicio de productos
+2024-10-21 15:27:04,697 - productos - INFO - Iniciando servicio de productos
+2024-10-22 00:43:45,815 - productos - INFO - Iniciando servicio de productos
+2024-10-22 00:43:46,618 - productos - INFO - Iniciando servicio de productos
+2024-10-22 01:14:24,543 - productos - INFO - Iniciando servicio de productos
+2024-10-22 01:14:26,256 - productos - INFO - Iniciando servicio de productos
+2024-10-22 03:03:26,245 - productos - INFO - Iniciando servicio de productos
+2024-10-25 18:34:02,143 - productos - INFO - Iniciando servicio de productos
+2024-10-25 18:34:02,352 - productos - INFO - Iniciando servicio de productos
+2024-10-25 18:45:56,298 - productos - INFO - Iniciando servicio de productos
+2024-10-25 18:46:05,681 - productos - INFO - Iniciando servicio de productos
+2024-10-25 18:49:11,457 - productos - INFO - Iniciando servicio de productos
+2024-10-25 18:49:46,977 - productos - INFO - Iniciando servicio de productos
+2024-10-25 18:49:49,271 - productos - INFO - Iniciando servicio de productos
+2024-10-25 18:50:27,851 - productos - INFO - Iniciando servicio de productos
+2024-10-25 18:50:31,160 - productos - INFO - Iniciando servicio de productos
+2024-10-25 18:50:33,459 - productos - INFO - Iniciando servicio de productos
+2024-10-25 18:50:47,863 - productos - INFO - Iniciando servicio de productos
+2024-10-25 18:59:06,992 - productos - INFO - Iniciando servicio de productos
+2024-10-25 18:59:07,189 - productos - INFO - Iniciando servicio de productos
+2024-10-25 19:11:08,935 - productos - INFO - Iniciando servicio de productos
+2024-10-25 19:11:25,348 - productos - INFO - Iniciando servicio de productos
+2024-10-25 19:11:31,678 - productos - INFO - Iniciando servicio de productos
+2024-10-25 19:11:33,981 - productos - INFO - Iniciando servicio de productos
+2024-10-25 19:11:44,356 - productos - INFO - Iniciando servicio de productos
+2024-10-25 19:11:50,691 - productos - INFO - Iniciando servicio de productos
+2024-10-25 19:26:53,657 - productos - INFO - Iniciando servicio de productos
+2024-10-25 19:27:33,964 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x7ff31ad28100>
+2024-10-25 19:27:33,964 - productos - INFO - Intentando publicar mensaje: crear:1
+2024-10-25 19:27:33,975 - productos - INFO - Mensaje publicado exitosamente
+2024-10-25 20:05:58,833 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitClosedState object at 0x7ff31ad28100>
+2024-10-25 20:05:58,834 - productos - INFO - Intentando publicar mensaje: crear:2
+2024-10-25 20:05:58,854 - productos - INFO - Mensaje publicado exitosamente

@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from database import conectar_db
-from jwt_auth import token_required
+import threading
+from jwt_auth import token_required, generate_token  # Cambia 'generar_token' a 'generate_token'
 import pika
 from resilience import retry_config, cb
 from logger import setup_logger
@@ -10,19 +11,47 @@ logger = setup_logger('inventario')
 
 @retry_config
 @cb
-def publicar_mensaje(mensaje):
-    logger.info(f"Intentando publicar mensaje: {mensaje}")
-    try:
-        connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
-        channel = connection.channel()
-        channel.queue_declare(queue='inventario_queue')
-        channel.basic_publish(exchange='', routing_key='inventario_queue', body=mensaje)
-        connection.close()
-        logger.info("Mensaje publicado exitosamente")
-    except Exception as e:
-        logger.error(f"Error al publicar mensaje: {str(e)}")
-        raise
+def consumir_mensajes():
+    def callback(ch, method, properties, body):
+        mensaje = body.decode()
+        accion, datos = mensaje.split(':', 1)
+        if accion == 'crear':
+            producto_id = datos
+            conn = conectar_db()
+            cur = conn.cursor()
+            cur.execute("INSERT INTO inventario (producto_id, cantidad) VALUES (%s, 0) ON CONFLICT DO NOTHING",
+                        (producto_id,))
+            conn.commit()
+            cur.close()
+            conn.close()
+            
+    connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
+    channel = connection.channel()
+    channel.queue_declare(queue='productos_queue')
+    channel.basic_consume(queue='productos_queue', on_message_callback=callback, auto_ack=True)
+    channel.start_consuming()
 
+threading.Thread(target=consumir_mensajes, daemon=True).start()
+
+@app.route('/login', methods=['POST'])
+def login():
+    datos = request.json
+    username = datos.get("username")
+    password = datos.get("password")
+
+    if not username or not password:
+        return jsonify({"error": "Faltan credenciales"}), 400
+
+    # Aquí deberías validar las credenciales de usuario, por simplicidad asumimos que son correctas
+    # Si las credenciales son válidas, generamos un token
+    if username == "user" and password == "pass":  # Cambia esto a una validación real
+        token = generate_token(username)
+        return jsonify({"token": token}), 200
+
+    return jsonify({"error": "Credenciales inválidas"}), 401
+
+
+#Ruta que trae todos los articulos dentro de la BD 
 @app.route('/inventario', methods=['GET'])
 @token_required
 def obtener_inventario():
@@ -34,6 +63,8 @@ def obtener_inventario():
     conn.close()
     return jsonify([{"id": i[0], "nombre": i[1], "cantidad": i[2], "ubicacion": i[3]} for i in inventario])
 
+
+#Ruta que trae solo el producto seleccionado con la id
 @app.route('/inventario/<int:id>', methods=['GET'])
 @token_required
 def obtener_item_inventario(id):
@@ -47,6 +78,9 @@ def obtener_item_inventario(id):
         return jsonify({"id": item[0], "nombre": item[1], "cantidad": item[2], "ubicacion": item[3]})
     return jsonify({"error": "Item no encontrado"}), 404
 
+
+
+#Ruta para agregar un nuevo articulo
 @app.route('/inventario', methods=['POST'])
 @token_required
 def crear_item_inventario():
@@ -75,6 +109,8 @@ def crear_item_inventario():
     cur.close()
     conn.close()
 
+
+#Ruta para actualizar un articulo que ya existe
 @app.route('/inventario/<int:id>', methods=['PUT'])
 @token_required
 def actualizar_item_inventario(id):
