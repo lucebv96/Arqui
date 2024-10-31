@@ -1,7 +1,6 @@
 import sqlite3
 
 def conectar_db():
-    # Asegúrate de que la ruta al archivo de la base de datos sea correcta
     conexion = sqlite3.connect("inventario_db.sqlite")
     return conexion
 
@@ -26,7 +25,7 @@ def inicializar_db():
     except Exception as e:
         print(f"Inventario: Error al inicializar la base de datos: {e}")
     finally:
-        # Asegúrate de cerrar la conexión si se abrió
+        
         if conn:
             conn.close()
 

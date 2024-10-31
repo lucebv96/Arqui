@@ -60,7 +60,7 @@ def crear_producto():
         id_producto = cur.lastrowid
         conn.commit()
         
-        # Cambiamos el mensaje para enviar todos los detalles necesarios
+        
         mensaje = f"crear:{id_producto}:{nuevo_producto['nombre']}:{nuevo_producto['cantidad']}:{nuevo_producto['ubicacion']}"
         publicar_mensaje(mensaje)
     except Exception as e:

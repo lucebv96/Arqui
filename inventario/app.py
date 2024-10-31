@@ -55,9 +55,8 @@ def login():
     if not username or not password:
         return jsonify({"error": "Faltan credenciales"}), 400
 
-    # Aquí deberías validar las credenciales de usuario, por simplicidad asumimos que son correctas
-    # Si las credenciales son válidas, generamos un token
-    if username == "user" and password == "pass":  # Cambia esto a una validación real
+    
+    if username == "user" and password == "pass":  
         token = generate_token(username)
         return jsonify({"token": token}), 200
 
