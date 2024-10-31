@@ -36,3 +36,36 @@
 2024-10-25 18:33:52,287 - inventario - INFO - Iniciando servicio de inventario
 2024-10-25 19:06:42,555 - inventario - INFO - Iniciando servicio de inventario
 2024-10-25 19:06:42,777 - inventario - INFO - Iniciando servicio de inventario
+2024-10-28 09:40:21,200 - inventario - INFO - Iniciando servicio de inventario
+2024-10-28 09:40:21,397 - inventario - INFO - Iniciando servicio de inventario
+2024-10-28 09:45:38,390 - inventario - INFO - Iniciando servicio de inventario
+2024-10-28 09:46:04,169 - consumir_inventario - INFO - Esperando mensajes de la cola 'productos_queue'...
+2024-10-28 09:58:32,813 - consumir_inventario - ERROR - Error al procesar el mensaje crear:3: no such table: productos
+2024-10-28 10:00:44,785 - consumir_inventario - INFO - Esperando mensajes de la cola 'productos_queue'...
+2024-10-28 10:00:44,786 - consumir_inventario - ERROR - Error al procesar el mensaje crear:4: no such table: productos
+2024-10-28 10:13:45,843 - consumir_inventario - INFO - Esperando mensajes de la cola 'productos_queue'...
+2024-10-28 10:17:01,138 - consumir_inventario - ERROR - Error al procesar el mensaje crear:1: no such table: productos
+2024-10-28 10:37:11,667 - consumir_inventario - INFO - Esperando mensajes de la cola 'productos_queue'...
+2024-10-28 10:37:28,400 - consumir_inventario - ERROR - Error al procesar el mensaje crear:2: no such table: productos
+2024-10-28 10:57:18,301 - consumir_inventario - INFO - Esperando mensajes de la cola 'productos_queue'...
+2024-10-28 10:57:38,950 - inventario - INFO - Iniciando servicio de inventario
+2024-10-28 10:57:39,152 - inventario - INFO - Iniciando servicio de inventario
+2024-10-28 10:57:43,973 - consumir_inventario - ERROR - Error al procesar el mensaje crear:3: no such table: productos
+2024-10-28 11:07:47,501 - inventario - INFO - Iniciando servicio de inventario
+2024-10-28 11:09:23,548 - inventario - INFO - Iniciando servicio de inventario
+2024-10-28 11:09:23,748 - inventario - INFO - Iniciando servicio de inventario
+2024-10-31 09:28:10,097 - inventario - INFO - Iniciando servicio de inventario
+2024-10-31 09:28:10,307 - inventario - INFO - Iniciando servicio de inventario
+2024-10-31 09:38:24,481 - inventario - INFO - Iniciando servicio de inventario
+2024-10-31 10:43:59,703 - inventario - INFO - Iniciando servicio de inventario
+2024-10-31 10:43:59,717 - inventario - INFO - Esperando mensajes en la cola 'productos_queue'...
+2024-10-31 10:43:59,910 - inventario - INFO - Iniciando servicio de inventario
+2024-10-31 10:43:59,922 - inventario - INFO - Esperando mensajes en la cola 'productos_queue'...
+2024-10-31 13:21:37,210 - inventario - INFO - Iniciando servicio de inventario
+2024-10-31 13:21:37,227 - inventario - INFO - Esperando mensajes en la cola 'productos_queue'...
+2024-10-31 13:22:37,907 - inventario - INFO - Iniciando servicio de inventario
+2024-10-31 13:22:37,922 - inventario - INFO - Esperando mensajes en la cola 'productos_queue'...
+2024-10-31 13:22:39,196 - inventario - INFO - Iniciando servicio de inventario
+2024-10-31 13:22:39,210 - inventario - INFO - Esperando mensajes en la cola 'productos_queue'...
+2024-10-31 13:22:41,530 - inventario - INFO - Iniciando servicio de inventario
+2024-10-31 13:22:41,544 - inventario - INFO - Esperando mensajes en la cola 'productos_queue'...

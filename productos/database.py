@@ -9,12 +9,13 @@ def inicializar_db():
         conn = conectar_db()
         cur = conn.cursor()
 
-        # Crear tabla de productos
+        # Crear tabla de productos sin el campo de descripción
         cur.execute('''
         CREATE TABLE IF NOT EXISTS productos (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             nombre TEXT NOT NULL,
-            descripcion TEXT
+            cantidad INTEGER NOT NULL,
+            ubicacion TEXT NOT NULL
         )
         ''')
 
@@ -31,14 +32,14 @@ def agregar_articulo():
 
         # Solicitar datos al usuario
         nombre = input("Ingrese el nombre del artículo: ")
-        descripcion = int(input("Ingrese la descripcion: "))
+        cantidad = int(input("Ingrese la cantidad: "))
+        ubicacion = input("Ingrese la ubicación: ")
         
-
         # Insertar datos en la tabla
         cur.execute('''
-        INSERT INTO productos (nombre, descripcion)
+        INSERT INTO productos (nombre, cantidad, ubicacion)
         VALUES (?, ?, ?)
-        ''', (nombre, descripcion))
+        ''', (nombre, cantidad, ubicacion))
 
         conn.commit()
         print("productos: Artículo agregado correctamente")

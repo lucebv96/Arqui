@@ -1,10 +1,12 @@
 import sqlite3
 
 def conectar_db():
+    # Asegúrate de que la ruta al archivo de la base de datos sea correcta
     conexion = sqlite3.connect("inventario_db.sqlite")
     return conexion
 
 def inicializar_db():
+    conn = None
     try:
         conn = conectar_db()
         cur = conn.cursor()
@@ -21,11 +23,15 @@ def inicializar_db():
 
         conn.commit()
         print("Inventario: Base de datos y tablas creadas correctamente")
-        conn.close()
     except Exception as e:
         print(f"Inventario: Error al inicializar la base de datos: {e}")
+    finally:
+        # Asegúrate de cerrar la conexión si se abrió
+        if conn:
+            conn.close()
 
 def agregar_articulo():
+    conn = None
     try:
         conn = conectar_db()
         cur = conn.cursor()
@@ -43,9 +49,11 @@ def agregar_articulo():
 
         conn.commit()
         print("Inventario: Artículo agregado correctamente")
-        conn.close()
     except Exception as e:
         print(f"Inventario: Error al agregar el artículo: {e}")
+    finally:
+        if conn:
+            conn.close()
 
 if __name__ == "__main__":
     inicializar_db()

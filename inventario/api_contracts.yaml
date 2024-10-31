@@ -1,0 +1,154 @@
+openapi: 3.0.0
+info:
+  title: Inventario API
+  version: 1.0.0
+  description: API para gestionar el inventario de productos.
+
+paths:
+  /login:
+    post:
+      summary: Autenticación de usuario
+      description: Genera un token de autenticación si las credenciales son válidas.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                password:
+                  type: string
+              required:
+                - username
+                - password
+      responses:
+        200:
+          description: Token generado exitosamente
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token:
+                    type: string
+        400:
+          description: Faltan credenciales
+        401:
+          description: Credenciales inválidas
+
+  /inventario:
+    get:
+      summary: Obtener inventario
+      description: Retorna todos los artículos en el inventario.
+      responses:
+        200:
+          description: Lista de artículos en el inventario
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                    producto_id:
+                      type: integer
+                    cantidad:
+                      type: integer
+
+    post:
+      summary: Crear un nuevo artículo en el inventario
+      description: Agrega un nuevo artículo al inventario.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                nombre:
+                  type: string
+                cantidad:
+                  type: integer
+                ubicacion:
+                  type: string
+              required:
+                - nombre
+                - cantidad
+      responses:
+        201:
+          description: Item creado exitosamente
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  mensaje:
+                    type: string
+        400:
+          description: Datos de inventario inválidos
+
+  /inventario/{id}:
+    get:
+      summary: Obtener artículo específico del inventario
+      description: Retorna un artículo en el inventario por su ID.
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        200:
+          description: Detalles del artículo
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  nombre:
+                    type: string
+                  cantidad:
+                    type: integer
+                  ubicacion:
+                    type: string
+        404:
+          description: Item no encontrado
+
+    put:
+      summary: Actualizar un artículo existente
+      description: Actualiza la información de un artículo en el inventario.
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                nombre:
+                  type: string
+                cantidad:
+                  type: integer
+                ubicacion:
+                  type: string
+              required:
+                - nombre
+                - cantidad
+      responses:
+        200:
+          description: Item actualizado exitosamente
+        404:
+          description: Item no encontrado

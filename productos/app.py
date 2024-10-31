@@ -8,7 +8,6 @@ from logger import setup_logger
 app = Flask(__name__)
 logger = setup_logger('productos')
 
-@retry_config
 @cb
 def publicar_mensaje(mensaje):
     logger.info(f"Intentando publicar mensaje: {mensaje}") 
@@ -22,9 +21,7 @@ def publicar_mensaje(mensaje):
     except Exception as e:
         logger.error(f"Error al publicar mensaje: {str(e)}")
         raise
-
 @app.route('/productos', methods=['GET'])
-@token_required
 def obtener_productos():
     conn = conectar_db()
     cur = conn.cursor()
@@ -32,10 +29,9 @@ def obtener_productos():
     productos = cur.fetchall()
     cur.close()
     conn.close()
-    return jsonify([{"id": p[0], "nombre": p[1], "descripcion": p[2]} for p in productos])
+    return jsonify([{"id": p[0], "nombre": p[1], "cantidad": p[2], "ubicacion": p[3]} for p in productos])
 
 @app.route('/productos/<int:id>', methods=['GET'])
-@token_required
 def obtener_producto(id):
     conn = conectar_db()
     cur = conn.cursor()
@@ -44,27 +40,29 @@ def obtener_producto(id):
     cur.close()
     conn.close()
     if producto:
-        return jsonify({"id": producto[0], "nombre": producto[1], "descripcion": producto[2]})
+        return jsonify({"id": producto[0], "nombre": producto[1], "cantidad": producto[2], "ubicacion": producto[3]})
     return jsonify({"error": "Producto no encontrado"}), 404
 
 @app.route('/productos', methods=['POST'])
-@token_required
 def crear_producto():
     nuevo_producto = request.json
-    if not nuevo_producto or 'nombre' not in nuevo_producto or 'descripcion' not in nuevo_producto:
+    if not nuevo_producto or 'nombre' not in nuevo_producto or 'cantidad' not in nuevo_producto or 'ubicacion' not in nuevo_producto:
         return jsonify({"error": "Datos de producto inválidos"}), 400
     
-    if not nuevo_producto['nombre'].strip() or not nuevo_producto['descripcion'].strip():
-        return jsonify({"error": "El nombre y la descripción del producto no pueden estar vacíos"}), 400
+    if not nuevo_producto['nombre'].strip() or nuevo_producto['cantidad'] <= 0 or not nuevo_producto['ubicacion'].strip():
+        return jsonify({"error": "El nombre no puede estar vacío, la cantidad debe ser mayor a cero, y la ubicación no puede estar vacía"}), 400
 
     conn = conectar_db()
     cur = conn.cursor()
     try:
-        cur.execute("INSERT INTO productos (nombre, descripcion) VALUES (?, ?)", 
-                    (nuevo_producto['nombre'], nuevo_producto['descripcion']))
+        cur.execute("INSERT INTO productos (nombre, cantidad, ubicacion) VALUES (?, ?, ?)", 
+                    (nuevo_producto['nombre'], nuevo_producto['cantidad'], nuevo_producto['ubicacion']))
         id_producto = cur.lastrowid
         conn.commit()
-        publicar_mensaje(f"crear:{id_producto}")
+        
+        # Cambiamos el mensaje para enviar todos los detalles necesarios
+        mensaje = f"crear:{id_producto}:{nuevo_producto['nombre']}:{nuevo_producto['cantidad']}:{nuevo_producto['ubicacion']}"
+        publicar_mensaje(mensaje)
     except Exception as e:
         conn.rollback()
         logger.error(f"No se pudo publicar el mensaje {id_producto}: {str(e)}")
@@ -75,23 +73,26 @@ def crear_producto():
 
     return jsonify({"id": id_producto, "mensaje": "Producto creado exitosamente"}), 201
 
+
 @app.route('/productos/<int:id>', methods=['PUT'])
-@token_required
 def actualizar_producto(id):
     datos = request.json
     conn = conectar_db()
     cur = conn.cursor()
-    cur.execute("UPDATE productos SET nombre = ?, descripcion = ? WHERE id = ?", 
-                (datos['nombre'], datos['descripcion'], id))
-    if cur.rowcount > 0:
-        conn.commit()
+    try:
+        cur.execute("UPDATE productos SET nombre = ?, cantidad = ?, ubicacion = ? WHERE id = ?", 
+                    (datos['nombre'], datos['cantidad'], datos['ubicacion'], id))
+        if cur.rowcount > 0:
+            conn.commit()
+            return jsonify({"mensaje": "Producto actualizado exitosamente"})
+        else:
+            return jsonify({"error": "Producto no encontrado"}), 404
+    except Exception as e:
+        logger.error(f"Error al actualizar el producto {id}: {str(e)}")
+        return jsonify({"error": "No se pudo actualizar el producto debido a un error de comunicación"}), 500
+    finally:
         cur.close()
         conn.close()
-        return jsonify({"mensaje": "Producto actualizado exitosamente"})
-    else:
-        cur.close()
-        conn.close()
-        return jsonify({"error": "Producto no encontrado"}), 404
 
 if __name__ == '__main__':
     logger.info("Iniciando servicio de productos")

@@ -1,21 +1,16 @@
-openapi: 3.0.3
+openapi: 3.0.0
 info:
-  title: Productos API
+  title: Servicio de Productos
   version: 1.0.0
-  description: API for managing products with RabbitMQ messaging and JWT authentication.
-servers:
-  - url: http://localhost:5000
+  description: API para gestionar el inventario de productos
 
 paths:
   /productos:
     get:
-      summary: Obtener todos los productos
-      description: Devuelve la lista de todos los productos registrados.
-      security:
-        - BearerAuth: []
+      summary: Obtener lista de productos
       responses:
         '200':
-          description: Lista de productos obtenida exitosamente.
+          description: Lista de productos
           content:
             application/json:
               schema:
@@ -25,40 +20,38 @@ paths:
                   properties:
                     id:
                       type: integer
-                      example: 1
                     nombre:
                       type: string
-                      example: "Producto A"
-                    descripcion:
+                    cantidad:
+                      type: integer
+                    ubicacion:
                       type: string
-                      example: "Descripción del producto A"
-        '401':
-          description: No autorizado. Token inválido o no proporcionado.
+        '500':
+          description: Error de servidor
 
     post:
       summary: Crear un nuevo producto
-      description: Crea un nuevo producto y publica un mensaje en RabbitMQ.
-      security:
-        - BearerAuth: []
       requestBody:
+        description: Datos del producto
         required: true
         content:
           application/json:
             schema:
               type: object
+              required:
+                - nombre
+                - cantidad
+                - ubicacion
               properties:
                 nombre:
                   type: string
-                  example: "Producto B"
-                descripcion:
+                cantidad:
+                  type: integer
+                ubicacion:
                   type: string
-                  example: "Descripción del producto B"
-              required:
-                - nombre
-                - descripcion
       responses:
         '201':
-          description: Producto creado exitosamente.
+          description: Producto creado exitosamente
           content:
             application/json:
               schema:
@@ -66,33 +59,26 @@ paths:
                 properties:
                   id:
                     type: integer
-                    example: 2
                   mensaje:
                     type: string
-                    example: "Producto creado exitosamente"
         '400':
-          description: Datos de producto inválidos o incompletos.
+          description: Datos de producto inválidos
         '500':
-          description: Error al publicar el mensaje o crear el producto.
-        '401':
-          description: No autorizado. Token inválido o no proporcionado.
+          description: Error de comunicación al crear el producto
 
   /productos/{id}:
     get:
-      summary: Obtener producto por ID
-      description: Devuelve los detalles de un producto específico por su ID.
-      security:
-        - BearerAuth: []
+      summary: Obtener un producto por ID
       parameters:
         - in: path
           name: id
-          required: true
           schema:
             type: integer
-            example: 1
+          required: true
+          description: ID del producto
       responses:
         '200':
-          description: Producto encontrado.
+          description: Detalles del producto
           content:
             application/json:
               schema:
@@ -100,31 +86,28 @@ paths:
                 properties:
                   id:
                     type: integer
-                    example: 1
                   nombre:
                     type: string
-                    example: "Producto A"
-                  descripcion:
+                  cantidad:
+                    type: integer
+                  ubicacion:
                     type: string
-                    example: "Descripción del producto A"
         '404':
-          description: Producto no encontrado.
-        '401':
-          description: No autorizado. Token inválido o no proporcionado.
+          description: Producto no encontrado
+        '500':
+          description: Error de servidor
 
     put:
       summary: Actualizar un producto por ID
-      description: Actualiza los detalles de un producto específico.
-      security:
-        - BearerAuth: []
       parameters:
         - in: path
           name: id
-          required: true
           schema:
             type: integer
-            example: 1
+          required: true
+          description: ID del producto a actualizar
       requestBody:
+        description: Datos actualizados del producto
         required: true
         content:
           application/json:
@@ -133,32 +116,14 @@ paths:
               properties:
                 nombre:
                   type: string
-                  example: "Producto A Actualizado"
-                descripcion:
+                cantidad:
+                  type: integer
+                ubicacion:
                   type: string
-                  example: "Descripción actualizada del producto A"
-              required:
-                - nombre
-                - descripcion
       responses:
         '200':
-          description: Producto actualizado exitosamente.
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  mensaje:
-                    type: string
-                    example: "Producto actualizado exitosamente"
+          description: Producto actualizado exitosamente
         '404':
-          description: Producto no encontrado.
-        '401':
-          description: No autorizado. Token inválido o no proporcionado.
-
-components:
-  securitySchemes:
-    BearerAuth:
-      type: http
-      scheme: bearer
-      bearerFormat: JWT
+          description: Producto no encontrado
+        '500':
+          description: Error de comunicación al actualizar el producto
