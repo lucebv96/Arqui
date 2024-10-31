@@ -4,6 +4,8 @@ import threading
 import pika
 from resilience import retry_config, cb
 from logger import setup_logger
+from jwt_auth import token_required, generate_token  
+
 
 
 app = Flask(__name__)
@@ -43,6 +45,24 @@ def consumir_mensajes():
 
 # Iniciar el hilo para consumir mensajes
 threading.Thread(target=consumir_mensajes, daemon=True).start()
+
+@app.route('/login', methods=['POST'])
+def login():
+    datos = request.json
+    username = datos.get("username")
+    password = datos.get("password")
+
+    if not username or not password:
+        return jsonify({"error": "Faltan credenciales"}), 400
+
+    # Aquí deberías validar las credenciales de usuario, por simplicidad asumimos que son correctas
+    # Si las credenciales son válidas, generamos un token
+    if username == "user" and password == "pass":  # Cambia esto a una validación real
+        token = generate_token(username)
+        return jsonify({"token": token}), 200
+
+    return jsonify({"error": "Credenciales inválidas"}), 401
+
 
 @app.route('/inventario', methods=['GET'])
 def obtener_inventario():
@@ -100,7 +120,7 @@ def crear_item_inventario():
 
 #Ruta para actualizar un articulo que ya existe
 @app.route('/inventario/<int:id>', methods=['PUT'])
-
+@token_required
 def actualizar_item_inventario(id):
     datos = request.json
     conn = conectar_db()

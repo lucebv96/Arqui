@@ -3,3 +3,4 @@
 .venvp/
 __pycache__/
 .env
+.sqlite

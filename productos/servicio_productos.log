@@ -674,3 +674,7 @@
 2024-10-31 10:56:47,681 - productos_resilience - INFO - Current Circuit State: <pybreaker.CircuitHalfOpenState object at 0x7f479d79d2a0>
 2024-10-31 10:56:47,681 - productos - INFO - Intentando publicar mensaje: crear:16:Puro Sol:25:Sanlo
 2024-10-31 10:56:47,701 - productos - INFO - Mensaje publicado exitosamente
+2024-10-31 14:12:55,506 - productos - INFO - Iniciando servicio de productos
+2024-10-31 14:12:55,703 - productos - INFO - Iniciando servicio de productos
+2024-10-31 14:25:41,748 - productos - INFO - Iniciando servicio de productos
+2024-10-31 14:25:41,942 - productos - INFO - Iniciando servicio de productos
